@@ -1,8 +1,9 @@
-# React + Vite
+# React + Vite + tailwindcss
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Gestor de finanzas simple 
 
-Currently, two official plugins are available:
+**Este proyecto es un gestor de finanzas diseñado para registrar tus ingresos y egresos, y calcular la diferencia para que puedas mantener un seguimiento preciso de tu dinero disponible.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Razones del proyecto
+
+*En este proyecto, mi objetivo principal fue crear una aplicación personalizada para gestionar mis finanzas desde mi propio dispositivo móvil. Aunque inicialmente se ha desarrollado con React para el navegador web, tengo planes de expandirlo en el futuro utilizando React Native para que también sea accesible desde dispositivos móviles.*
