@@ -13,15 +13,15 @@ export default function Registros({ registros,setRegistros }) {
 
 
     return (
-        <div className='min-w-72  flex flex-col justify-center mx-auto m-5 p-7 border border-green-600'>
+        <div className='min-w-72  flex flex-col justify-center mx-auto m-5 p-1 border border-green-600'>
             {registros.length > 0 ? (
                 <>
-                    <h2 className='text-center font-black text-4xl mb-5'>Registros guardados:</h2>
-                    <div className=" w-11/12 grid grid-cols-5 items-center m-5 p-1  text-lg font-black">
+                    <h2 className='text-center font-black  mb-1'>Registros guardados:</h2>
+                    <div className=" w-full grid grid-cols-4 items-center  text-center p-1 text-xs md:text-lg  font-black">
                         <p>Tipo</p>
                         <p>Concepto</p>
                         <p>Cantidad</p>
-                        <p>Categoria</p>
+                      
                     
                     </div>
 
@@ -30,12 +30,11 @@ export default function Registros({ registros,setRegistros }) {
                         {registros.map((registro, index) => (
 
 
-                            <div key={index} className='bg-green-200 w-11/12 grid grid-cols-5 items-center justify-center m-5 p-1 border border-green-600 '>
+                            <div key={index} className='bg-green-200 w-full text-xs grid grid-cols-4 mb-2 items-center   border border-green-600 '>
                                 <p className={`text-center ${registro.tipo === 'deposito' ? 'bg-green-500' : 'bg-red-500'}`}>{registro.tipo}</p>
-                                <p className="text-center font-black text-green-700 "> {registro.concepto}</p>
+                                <p className="text-center text-sx  font-black text-green-700 "> {registro.concepto}</p>
                                 <p className="text-center"> {formatCurency(registro.cantidad)}</p>
-                                <p className="text-center"> {registro.categoria}</p>
-                                <button className="text-center  text-white w-fit p-2 bg-red-600" onClick={() => eliminarRegistro(registro.id)}>Eliminar</button>
+                                <button className=" text-white ml-2 p-1  bg-red-600" onClick={() => eliminarRegistro(registro.id)}>X</button>
       
                                 
                             </div>
@@ -46,7 +45,7 @@ export default function Registros({ registros,setRegistros }) {
 
                 </>
             ) : (
-                <h2 className='text-center font-black text-4xl mb-5'>Aun no hay Registros</h2>
+                <h2 className='text-center font-black text-md sm:text-4xl mb-5'>Aun no hay Registros</h2>
             )}
         </div>
     );

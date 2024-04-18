@@ -17,7 +17,7 @@ export default function DisplayTotal({ registros }) {
 
   return (
     <>
-      <div className='   p-2 flex w-full flex-col  sm:flex-row mx-auto justify-around bg-slate-900 text-white font-black text-3xl text-center '>
+      <div className='   p-2 flex w-full flex-col  sm:flex-row mx-auto justify-around bg-slate-900 text-white font-black text-lg md:text-3xl text-center '>
 
         <div className=" border border-white mb-1 p-2">
           <p>Total Depositos</p>
