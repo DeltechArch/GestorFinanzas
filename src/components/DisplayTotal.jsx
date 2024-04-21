@@ -17,19 +17,19 @@ export default function DisplayTotal({ registros }) {
 
   return (
     <>
-      <div className='   p-2 flex w-full flex-col  sm:flex-row mx-auto justify-around bg-slate-900 text-white font-black text-lg md:text-3xl text-center '>
+      <div className='   grid grid-cols-3 w-full mx-auto justify-around bg-black text-white font-black text-xs md:text-2xl text-center '>
 
-        <div className=" border border-white mb-1 p-2">
+        <div className=" border border-white  p-2">
           <p>Total Depositos</p>
           <span>{formatCurency(totalDepositos)}</span>
         </div>
 
-        <div className=" border border-white mb-1 p-2">
+        <div className=" border border-white  p-2">
           <p>Total Gastos</p>
           <span>{formatCurency(totalGastos)}</span>
         </div>
 
-        <div className='border border-white mb-1 p-2'>
+        <div className='border border-white p-2'>
           <p> Disponible </p>
           <span className={`${disponible < 0 ? 'text-red-500' : 'text-green-500'}`}>{formatCurency(disponible)}</span>
         </div>

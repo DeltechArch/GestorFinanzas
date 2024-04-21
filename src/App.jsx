@@ -3,6 +3,7 @@ import RegistrosFrom from "./components/RegistrosForm";
 import Header from "./components/Header";
 import ShowRegistros from "./components/ShowRegistros";
 import DisplayTotal from "./components/DisplayTotal";
+import BotonAdd from "./components/BotonAdd";
 
 function App() {
   // Obtener los registros guardados en el localStorage si existen
@@ -22,12 +23,11 @@ function App() {
   return (
     <>
       <Header />
-      <DisplayTotal
-        registros={registros}
-      />
+      
 
 
-      <div className="grid md:grid-cols-2 ">
+
+     
         <RegistrosFrom
           handleAgregarRegistro={handleAgregarRegistro}
         />
@@ -36,9 +36,13 @@ function App() {
           registros={registros}
           setRegistros={setRegistros}
         />
-      </div>
 
 
+     
+
+      <DisplayTotal
+        registros={registros}
+      />
 
 
 

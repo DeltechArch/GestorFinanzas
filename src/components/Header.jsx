@@ -16,9 +16,9 @@ export default function Header() {
   };
 
   return (
-    <div className=' grid grid-cols-1 sm:grid-cols-2  bg-green-300 justify-items-end'>
-      <h1 className="text-center p-6 font-black text-4xl w-full">Gestor De Finanzas</h1>
-      <button className="bg-red-500 w-full mb-2 sm:w-fit text-3xl text center text-white px-4 py-2 rounded sm:m-3 sm:mr-4" onClick={handleEliminarRegistros}>Reiniciar App</button>
+    <div className=' grid grid-cols-2 bg-green-700 justify-items-end items-center'>
+      <h1 className="text-center p-2 font-black text-lg w-full">Gestor De Finanzas</h1>
+      <button className="bg-red-500 w-fit p-1 mr-2 font-black  text-lg text center text-white  rounded" onClick={handleEliminarRegistros}>Reiniciar App</button>
     </div>
   )
 }
