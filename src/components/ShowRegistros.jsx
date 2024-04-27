@@ -16,21 +16,15 @@ export default function Registros({ registros, setRegistros }) {
         <div className=' grid grid-cols-1 w-72 justify-center mx-auto m-5 p-1'>
             {registros.length > 0 ? (
                 <>
-                    <h2 className='text-center font-black  mb-1'>Registros guardados:</h2>
-                    <div className=" w-full grid grid-cols-4 items-center  text-center p-1 text-xs font-black">
-                        <p>Tipo</p>
-                        <p>Concepto</p>
-                        <p>Cantidad</p>
-
-
-                    </div>
+                    <h2 className='text-center text-3xl font-black uppercase mb-1'>Registros guardados</h2>
+                   
 
                     <div className=" w-full h-96 overflow-y-auto overflow-x-hidden">
 
                         {registros.map((registro, index) => (
 
 
-                            <div key={index} className={`w-full ${registro.tipo === 'deposito' ? 'bg-green-600' : 'bg-red-600'} text-sm text-center grid grid-cols-3 p-1 mb-2 items-center border border-gray-300 rounded-lg shadow-md `}>
+                            <div key={index} className={`w-full ${registro.tipo === 'ingresos' ? 'bg-green-600' : 'bg-red-600'} text-sm text-center grid grid-cols-3 p-1 mb-2 items-center border border-gray-300 rounded-lg shadow-md `}>
 
                                 <div className=" grid grid-cols-1 gap-y-1 text-white font-black ">
                                     <p  className=" p-1">{registro.tipo}</p>

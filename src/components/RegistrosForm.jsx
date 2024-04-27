@@ -57,7 +57,7 @@ export default function DepositosForm({ handleAgregarRegistro }) {
                 />
 
                 {visible && (
-                    <form onSubmit={handleSubmit} className="absolute top-32  py-4 px-5 text-white bg-green-700"
+                    <form onSubmit={handleSubmit} className="absolute top-48  py-4 px-5 text-white bg-green-700"
                         
                     >
                         <h2 className=' text-center font-black text-lg md:text-2xl mb-1 p-1 uppercase'>Registros</h2>
@@ -71,8 +71,8 @@ export default function DepositosForm({ handleAgregarRegistro }) {
                                 value={tipo}
                                 onChange={(e) => setTipo(e.target.value)}
                             >
-                                <option value="">Selecciona una categoría</option>
-                                <option value="deposito">Ingresos</option>
+                                <option value="seleccionar">Seleciona un tipo</option>
+                                <option value="ingresos">Ingresos</option>
                                 <option value="gastos">Gasto</option>
 
 

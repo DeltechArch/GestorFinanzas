@@ -23,26 +23,26 @@ function App() {
   return (
     <>
       <Header />
-      
-
-
-
-     
-        <RegistrosFrom
-          handleAgregarRegistro={handleAgregarRegistro}
-        />
-
-        <ShowRegistros
-          registros={registros}
-          setRegistros={setRegistros}
-        />
-
-
-     
 
       <DisplayTotal
         registros={registros}
       />
+
+
+
+      <RegistrosFrom
+        handleAgregarRegistro={handleAgregarRegistro}
+      />
+
+      <ShowRegistros
+        registros={registros}
+        setRegistros={setRegistros}
+      />
+
+
+
+
+
 
 
 
