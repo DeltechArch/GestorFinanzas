@@ -3,8 +3,8 @@ import RegistrosFrom from "./components/RegistrosForm";
 import Header from "./components/Header";
 import ShowRegistros from "./components/ShowRegistros";
 import DisplayTotal from "./components/DisplayTotal";
-import BotonAdd from "./components/BotonAdd";
 
+//realizar cualquier cambio 
 function App() {
   // Obtener los registros guardados en el localStorage si existen
   const [registros, setRegistros] = useState(
